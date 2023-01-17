@@ -5,7 +5,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("."));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/main.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/chatbot", (req, res) => {
